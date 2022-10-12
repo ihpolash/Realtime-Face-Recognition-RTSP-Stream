@@ -88,7 +88,7 @@ class FaceRecognition(object):
                 # cv2.imshow('frame', frame)
                 # if cv2.waitKey(20) & 0xFF == ord('q'):
                 #     break
-                _, jpeg = cv2.imencode('.jpg', frame)
+                _, jpeg = cv2.imencode('.jpg', small_frame)
                 return jpeg.tobytes()
         # cap.release()
         # cv2.destroyAllWindows()
