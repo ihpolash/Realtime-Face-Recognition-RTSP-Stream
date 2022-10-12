@@ -7,7 +7,7 @@ import cv2
 
 app = Flask(__name__)
 
-front_cam = "rtsp://admin:ismail.2022@192.168.1.176:554/cam/realmonitor?channel=1&subtype=0"
+front_cam = "rtsp://admin:ismail.2022@71.187.210.42:5541/cam/realmonitor?channel=1&subtype=0"
 back_cam = "rtsp://admin:ismail.2022@71.187.210.42:5542/cam/realmonitor?channel=1&subtype=0"
 
 @app.route('/', methods=['GET', 'POST'])
