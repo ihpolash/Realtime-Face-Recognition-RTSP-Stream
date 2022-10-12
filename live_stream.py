@@ -37,7 +37,7 @@ class FaceRecognition(object):
 
                 
                 # faces = facec.detectMultiScale(small_frame, 1.3, 5)
-                print(faces)
+                # print(faces)
                 today = date.today()
 
                 if not os.path.isdir(str(today)):
