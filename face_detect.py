@@ -56,6 +56,7 @@ def face_detect(image_path):
             
         else:
             name = "Unknown"
+            last_entry = "Not Found!"
 
 
         print(name)

@@ -75,7 +75,8 @@ class FaceRecognition(object):
                         else:
                             count = len(known_face_names) + 1
                             known_face_encodings.append(face_encoding)
-                            known_face_names.append(str(count))
+                            face_name_id = "#" + str(count)
+                            known_face_names.append(str(face_name_id))
                             store_data = {"face_encodings" : known_face_encodings,"user_names": known_face_names}
                             with open(f'face_encoding.pickle', 'wb+') as handle:
                                 pickle.dump(store_data, handle, protocol=pickle.HIGHEST_PROTOCOL)
